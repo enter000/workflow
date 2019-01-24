@@ -1,0 +1,30 @@
+{
+  "name": "workflow",
+  "version": "1.0.0",
+  "description": "front-end workflow tool",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enter000/workflow.git"
+  },
+  "author": "levitskyefim@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enter000/workflow/issues"
+  },
+  "homepage": "https://github.com/enter000/workflow#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0"
+  }
+}

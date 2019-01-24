@@ -1,0 +1,9 @@
+.gitconfig.local
+
+package-lock.json
+
+
+#Dev
+
+.vscode
+node_modules
