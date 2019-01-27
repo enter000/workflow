@@ -1,6 +1,12 @@
-import * as gulp from 'gulp';
+const CONFIG = {
+    
+};
 
-gulp.task('default', (done) => {
-    console.log('123');
-    done();
-});
+import * as gulp from 'gulp';
+import * as loadConfig from 'load-gulp-config';
+import * as data from './gulp/config/gulp-config'(CONFIG);
+
+const configPath = `${process.cwd()}/gulp/tasks`;
+
+
+
