@@ -41,7 +41,7 @@ function getTask(task) {
 
 // gulp.task('clean', gulp.parallel(getTask('clean')));
 
-// gulp.task('default', gulp.parallel(getTask('nunjucks')));
+gulp.task('default', gulp.parallel(getTask('nunjucks')));
 // gulp.task('uglify', gulp.series(getTask('clean'), getTask('uglify')));
 gulp.task('sass', gulp.series(getTask('sass')));
 
