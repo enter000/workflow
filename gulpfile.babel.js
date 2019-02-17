@@ -4,6 +4,8 @@ const CONFIG = {
 
   DEVELOPMENT_DIR: 'dev',          // Development
 
+  PORT: 3000,                      // Dev Server Port
+
   RESOURSES_DIR: 'res',            // Resourses
   COMPONENTS_DIR: 'components',    // Folder in wich files will be stored
   
@@ -43,5 +45,6 @@ function getTask(task) {
 
 // gulp.task('default', gulp.parallel(getTask('nunjucks')));
 // gulp.task('uglify', gulp.series(getTask('clean'), getTask('uglify')));
-gulp.task('sass', gulp.series(getTask('sass')));
+// gulp.task('sass', gulp.series(getTask('sass')));
+gulp.task('connect', gulp.series(getTask('connect')));
 
