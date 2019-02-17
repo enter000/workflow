@@ -1,0 +1,34 @@
+html {
+  padding: 0;
+  height: 100%;
+  margin: 0;
+}
+
+html h2 {
+  width: 100%;
+}
+
+html h2:last-of-type {
+  width: 200px;
+}
+
+.asdsad {
+  height: 50%;
+}
+
+.testClass {
+  width: 100%;
+}
+
+.testClass span {
+  width: 20px;
+}
+
+.testClass .header.testClass-test {
+  display: flex;
+  flex-direction: column;
+}
+
+.qweqwqwe {
+  position: absolute;
+}

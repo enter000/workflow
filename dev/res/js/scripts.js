@@ -1,1 +1,1 @@
-var i=1;i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1,i=1;v;
+var i=9e3;i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3,i=9e3;

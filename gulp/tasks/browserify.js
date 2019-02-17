@@ -1,5 +1,5 @@
 export default (taskHelpers) => {
-    const { gulp, plugins, pump } = taskHelpers;
+    const { gulp, plugins, pump, browserify } = taskHelpers;
     const project = taskHelpers.config;
     
     return (done) => {

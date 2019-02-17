@@ -16,6 +16,13 @@ export default (config) => {
       js: {
         dir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.JS_DIR}`,
         devDir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.JS_DEV_DIR}`,
+      },
+      sass: {
+        dir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.SASS_DIR}`,
+        compDir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.SASS_DIR}/${config.COMPONENTS_DIR}`,
+      },
+      css: {
+        dir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.CSS_DIR}`,
       }
     }
   }
