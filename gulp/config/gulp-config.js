@@ -1,5 +1,3 @@
-import * as fs from 'fs';
-
 export default (config) => {
   return {
     name: config.PROJECT_NAME,
@@ -18,6 +16,7 @@ export default (config) => {
       js: {
         dir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.JS_DIR}/`,
         devDir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.JS_DEV_DIR}/`,
+        compDir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.JS_DEV_DIR}/${config.COMPONENTS_DIR}/`,
       },
       sass: {
         dir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.SASS_DIR}/`,

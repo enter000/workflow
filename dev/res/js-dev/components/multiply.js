@@ -1,3 +1,3 @@
-export function multiply(a, b) {
+export default (a, b) => {
     return a * b;
 }

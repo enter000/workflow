@@ -24,17 +24,14 @@ import gulp from 'gulp';
 import plugins from 'gulp-load-plugins';
 import gulp_config from './gulp/config/gulp-config';
 import pump from 'pump';
-import browserify from 'browserify';
 
 const taskHelpers = {
   gulp,
   config: gulp_config(CONFIG),
   plugins: plugins(),
   pump,
-  browserify
 }
 
-console.log(taskHelpers.plugins);
 
 function getTask(task) {
   return require(`./gulp/tasks/${task}`).default(taskHelpers);
@@ -46,5 +43,6 @@ function getTask(task) {
 // gulp.task('default', gulp.parallel(getTask('nunjucks')));
 // gulp.task('uglify', gulp.series(getTask('clean'), getTask('uglify')));
 // gulp.task('sass', gulp.series(getTask('sass')));
-gulp.task('connect', gulp.series(getTask('connect')));
+// gulp.task('connect', gulp.series(getTask('connect')));
+gulp.task('browserify', gulp.series(getTask('browserify')));
 
