@@ -44,5 +44,5 @@ function getTask(task) {
 // gulp.task('uglify', gulp.series(getTask('clean'), getTask('uglify')));
 // gulp.task('sass', gulp.series(getTask('sass')));
 // gulp.task('connect', gulp.series(getTask('connect')));
-gulp.task('browserify', gulp.series(getTask('browserify')));
+gulp.task('browserify', gulp.parallel(getTask('browserify')));
 
