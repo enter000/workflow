@@ -6,9 +6,9 @@ export default function (taskHelpers) {
 
     const nunjucks = plugins.nunjucksRender;
 
-    console.log(project.res.html.pages);
-    console.log(project.res.html.templates);
-    console.log(project.res.dir);
+    // console.log(project.res.html.pages);
+    // console.log(project.res.html.templates);
+    // console.log(project.res.dir);
 
     return (done) => {
         pump([

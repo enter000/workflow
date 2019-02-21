@@ -2,13 +2,8 @@ export default (taskHelpers) => {
     const { gulp, plugins, pump } = taskHelpers;
     const project = taskHelpers.config;
     
-    console.log(plugins, 'plugins sass');
-
     const sass = plugins.sass;
-    // plugins.sass.compiler = require('node-sass');
     sass.compiler = require('node-sass');
-
-    console.log(project.res.sass.compDir);
 
     return (done) => {
         pump([
@@ -19,6 +14,7 @@ export default (taskHelpers) => {
                 outputStyle: 'expanded',
                 precision: 2,
                 includePaths: [project.res.sass.compDir],
+                errLogToConsole: true
             }).on('error', sass.logError),            
             gulp.dest(project.res.css.dir)
         ]);
