@@ -1,18 +1,23 @@
+import nunjucks from 'nunjucks';
+
 export default function (taskHelpers) {
-    // const { project } = options;
     const { gulp, plugins, pump } = taskHelpers;
     const project = taskHelpers.config;
-    
-    console.log(taskHelpers.config);
 
+    const nunjucks = plugins.nunjucksRender;
 
-    console.log(project.res.html.templates.pages);
-    plugins.nunjucksRender.nunjucks.configure([project.res.html.templates.pages]);
+    console.log(project.res.html.pages);
+    console.log(project.res.html.templates);
+    console.log(project.res.dir);
+
     return (done) => {
-        gulp.src(`${project.res.html.templates.partials}/**/*.html`)
-            .pipe(plugins.nunjucksRender())
-            .pipe(gulp.dest(project.res.html.templates.dir));
-
+        pump([
+            gulp.src('**/*.html', { cwd: project.res.html.pages }),
+            nunjucks({
+                path: project.res.html.templates,
+            }),
+            gulp.dest(project.res.dir)
+        ]);
         done();
     }
 }

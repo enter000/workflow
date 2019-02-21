@@ -1,5 +1,3 @@
-<!-- layout.html -->
-
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -8,8 +6,8 @@
   <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-  <!-- You write code for this content block in another file -->
   {% block content %} {% endblock %}
+  {% include 'partials/footer.html' %}
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="js/scripts.min.js"></script>
   </body>

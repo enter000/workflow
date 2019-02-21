@@ -7,11 +7,9 @@ export default (config) => {
     res: {
       dir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/`,
       html: {
-        templates: {
-          dir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.TEMPLATES_DIR}/`,
-          pages: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.TEMPLATES_DIR}/${config.PAGES_DIR}/`,
-          partials: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.TEMPLATES_DIR}/${config.PARTIALS_DIR}/`,
-        }
+        dir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.HTML_DIR}/`,
+        pages: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.HTML_DIR}/${config.PAGES_DIR}/`,
+        templates: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.HTML_DIR}/${config.TEMPLATES_DIR}/`,
       },
       js: {
         dir: `${config.DEVELOPMENT_DIR}/${config.RESOURSES_DIR}/${config.JS_DIR}`,

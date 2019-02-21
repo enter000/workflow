@@ -9,8 +9,8 @@ const CONFIG = {
   RESOURSES_DIR: 'res',            // Resourses
   COMPONENTS_DIR: 'components',    // Folder in wich files will be stored
   
-  TEMPLATES_DIR: 'templates',      // HTML Templates
-  PARTIALS_DIR: 'partials',        // HTML Partials
+  HTML_DIR: 'html',           // HTML Templates
+  TEMPLATES_DIR: 'templates',       // HTML Partials
   PAGES_DIR: 'pages',              // HTML Compiled pages        
 
   JS_DIR: 'js',                    // JS Dir
@@ -40,9 +40,9 @@ function getTask(task) {
 
 // gulp.task('clean', gulp.parallel(getTask('clean')));
 
-// gulp.task('default', gulp.parallel(getTask('nunjucks')));
+gulp.task('default', gulp.parallel(getTask('nunjucks')));
 // gulp.task('uglify', gulp.series(getTask('clean'), getTask('uglify')));
 // gulp.task('sass', gulp.series(getTask('sass')));
 // gulp.task('connect', gulp.series(getTask('connect')));
-gulp.task('browserify', gulp.parallel(getTask('browserify')));
+// gulp.task('browserify', gulp.parallel(getTask('browserify')));
 
