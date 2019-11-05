@@ -4,7 +4,7 @@ import cssnano from 'cssnano';
 export default (taskHelpers) => {
     const { gulp, plugins, pump } = taskHelpers;
     const project = taskHelpers.config;
-    
+
     const sass = plugins.sass;
     sass.compiler = require('node-sass');
 
@@ -28,7 +28,7 @@ export default (taskHelpers) => {
                 precision: 2,
                 includePaths: [project.res.sass.compDir],
                 errLogToConsole: true
-            }).on('error', sass.logError),       
+            }).on('error', sass.logError),
             plugins.postcss(postCssPlugins),
             plugins.sourcemaps.write('./'),
             gulp.dest(project.res.css.dir)

@@ -11,7 +11,7 @@ export default (taskHelpers) => {
     const { gulp, plugins, pump } = taskHelpers;
     const project = taskHelpers.config;
 
-    return () => {
+    return function js() {
         const files = glob.sync(`${project.res.js.devDir}*.js`);
         return merge(files.map((file) => {
 
